@@ -1,10 +1,10 @@
 import Cardapio from "./entities/cardapio";
-import ItensSecudarios from "./entities/itens-secundarios";
+import ItensSecundarios from "./entities/itens-secundarios";
 
 class CaixaDaLanchonete {
     constructor() {
         this.cardapio = new Cardapio();
-        this.itensSecudarios = new ItensSecudarios();
+        this.itensSecundarios = new ItensSecundarios();
     }
 
     calcularValorDaCompra(metodoDePagamento, itens) {
@@ -31,11 +31,11 @@ class CaixaDaLanchonete {
             }
 
             const item = cardapio[codigo];
-            const itensSecudarios = this.itensSecudarios.getItens();
+            const itensSecundarios = this.itensSecundarios.getItens();
 
             // Verificar se o item é um item principal
-            if (codigo in itensSecudarios) {
-                const codigoPrincipal = itensSecudarios[codigo];
+            if (codigo in itensSecundarios) {
+                const codigoPrincipal = itensSecundarios[codigo];
                 if (
                     !itens.some((itemInfo) =>
                         itemInfo.startsWith(codigoPrincipal)

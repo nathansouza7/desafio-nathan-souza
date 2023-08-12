@@ -1,4 +1,4 @@
-export default class ItensSecudarios {
+export default class ItensSecundarios {
   constructor() {
       this.itens = {
         chantily: "cafe",
