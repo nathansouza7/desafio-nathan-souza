@@ -1,5 +1,5 @@
 import Cardapio from "./entities/cardapio";
-import ItensSecudarios from "./entities/intens-secundarios";
+import ItensSecudarios from "./entities/itens-secundarios";
 
 class CaixaDaLanchonete {
     constructor() {
